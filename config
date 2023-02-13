@@ -14,7 +14,7 @@ set $mod Mod4
 floating_modifier $mod
 
 ### DO NOT MOVE FONT LINES
-font pango:Iosevka Nerd Font 8
+font pango:Iosevka Nerd Font 11
 
 ### DO NOT MOVE WORKSPACE LINES
 set $primary_display HDMI-0
