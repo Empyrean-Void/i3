@@ -55,9 +55,6 @@ include ~/.config/i3/autostart.conf
 # Window rules
 include ~/.config/i3/rules.conf
 
-# Modes
-include ~/.config/i3/modes.conf
-
 # Keybindings
 include ~/.config/i3/keys.conf
 
