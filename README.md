@@ -39,7 +39,7 @@ For the best experience read the [i3 docs](https://i3wm.org/docs/), everything c
 The main configuration file is named `config` and is responsible for the following:
 
 - Setting important variables such as, the modifier key, fonts, and display variables
-- Loaded any external files
+- Loading any external files
 - Executing any startup scripts
 
 The look and feel of i3 is configured in `appearance.conf`
