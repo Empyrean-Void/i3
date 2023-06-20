@@ -9,32 +9,28 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+# Monitors
 set $primary HDMI-0
 set $secondary eDP-1-1
 
-exec --no-startup-id $HOME/.local/bin/display-layout
-exec --no-startup-id $HOME/.config/i3/autostart.sh
+# Scripts
+exec --no-startup-id $HOME/.config/i3/scripts/display-layout
+exec --no-startup-id $HOME/.config/i3/scripts/autostart.sh
 
+# Files (Order is important)
+include appearance.conf
 include workspaces.conf
+include keybinds.conf
+include rules.conf
 
+# Font
 font pango:JetBrainsMono Nerd Font 10
 
+# Fallback font
 font pango:DejaVu Sans Mono 10
 
-# Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-
+# Mod key
 set $mod Mod4
-
-# Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# move tiling windows via drag & drop by left-clicking into the title bar,
-# or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
-include keybinds.conf
-
-include appearance.conf
-
-include rules.conf
