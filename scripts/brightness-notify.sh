@@ -1,6 +1,6 @@
 #!/bin/sh
 
-bar_color="#cba6f7"
+bar_color="#8aadf4"
 brightness_step=5
 
 function get_brightness {
