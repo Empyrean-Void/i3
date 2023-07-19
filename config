@@ -21,7 +21,7 @@ exec_always --no-startup-id $HOME/.fehbg
 exec_always --no-startup-id $HOME/.local/bin/legion-kb-rgb load-profile -p $HOME/.config/keyboard-rgb/wave.json
 
 # Files (Order is important)
-include appearance.conf
+include themes/wave.conf
 include workspaces.conf
 include keybinds.conf
 include rules.conf
