@@ -17,6 +17,8 @@ set $secondary eDP-1-1
 exec --no-startup-id $HOME/.config/i3/scripts/display-layout
 exec --no-startup-id $HOME/.config/i3/scripts/autostart.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.fehbg
+exec_always --no-startup-id $HOME/.local/bin/legion-kb-rgb load-profile -p $HOME/.config/keyboard-rgb/wave.json
 
 # Files (Order is important)
 include appearance.conf
