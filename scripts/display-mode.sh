@@ -1,6 +1,6 @@
 #! /bin/sh
 
-chosen=$(printf "󰍺  Dual Display\n󰍹  External\n󰍹  Laptop" | dmenu -i -p "Display: ")
+chosen=$(printf "󰍺  Dual Display\n󰍹  External\n󰍹  Laptop" | dmenu -i -l 3)
 
 case "$chosen" in
 	"󰍺  Dual Display")

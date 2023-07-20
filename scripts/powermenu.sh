@@ -2,7 +2,7 @@
 
 # Import Current Theme
 
-chosen=$(printf "  Suspend\n  Restart\n  Power Off" | dmenu -i -p "Power Menu:")
+chosen=$(printf "  Suspend\n  Restart\n  Power Off" | dmenu -i -l 3)
 
 case "$chosen" in
 	"  Suspend") systemctl suspend ;;

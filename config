@@ -9,9 +9,12 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-# Monitors
+# Variables
 set $primary HDMI-0
 set $secondary eDP-1-1
+
+set $theme wave
+set $mode dark
 
 # Scripts
 exec --no-startup-id $HOME/.config/i3/scripts/display-layout
@@ -21,7 +24,7 @@ exec_always --no-startup-id $HOME/.fehbg
 exec_always --no-startup-id $HOME/.local/bin/legion-kb-rgb load-profile -p $HOME/.config/keyboard-rgb/wave.json
 
 # Files (Order is important)
-include themes/wave.conf
+include themes/$theme/$mode.conf
 include workspaces.conf
 include keybinds.conf
 include rules.conf

@@ -5,7 +5,7 @@ DIR="$HOME/.config/bspwm"
 STYLE="gruvbox"
 RASI="$DIR/themes/$STYLE/rofi/power-save.rasi"
 
-chosen=$(printf "󰾆  Power Save\n󰾅  Balanced\n󰓅  Performance" | dmenu -i -p "Power Mode:")
+chosen=$(printf "󰾆  Power Save\n󰾅  Balanced\n󰓅  Performance" | dmenu -i -l 3)
 
 case "$chosen" in
 	"󰾆  Power Save") powerprofilesctl set power-save ;;
